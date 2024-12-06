@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bán Bánh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bánh Ngon</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <div class="product">
+                <img src="https://naidecor.vn/wp-content/uploads/2019/11/banh-macaron-trang-tri-mo-phong-up-2-2.jpg" alt="Bánh 1">
+                <h2>Bánh Socola</h2>
+                <p>Giá: 50.000đ</p>
+                <button class="add-to-cart" data-product="Bánh Socola" data-price="50000">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/R.e985b755ed45d3b1b41f20ac69c3fc09?rik=ePke6%2fe7b3ycAw&pid=ImgRaw&r=0" alt="Bánh 2">
+                <h2>Bánh Dâu</h2>
+                <p>Giá: 40.000đ</p>
+                <button class="add-to-cart" data-product="Bánh Dâu" data-price="40000">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="https://scr.vn/wp-content/uploads/2020/10/Banh-kem-mau-pastel-sang-trong-1024x1024.jpg" alt="Bánh 3">
+                <h2>Bánh Mì Ngọt</h2>
+                <p>Giá: 30.000đ</p>
+                <button class="add-to-cart" data-product="Bánh Mì Ngọt" data-price="30000">Thêm vào giỏ</button>
+            </div>
+        </section>
+
+        <section id="cart" class="cart">
+            <h2>Giỏ Hàng</h2>
+            <ul id="cart-items"></ul>
+            <p>Tổng cộng: <span id="total-price">0</span>đ</p>
+            <button id="checkout-btn">Thanh toán</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bánh Ngon. Tất cả các quyền được bảo vệ.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
